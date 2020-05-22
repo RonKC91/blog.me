@@ -1,0 +1,60 @@
+@import "footer.css";
+@import "nav.css";
+@import "body.css";
+html {
+    margin: 10px;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    font-size: 5vw;
+}
+h2{
+    font-size: 4vw;
+    display: inline-block;
+    vertical-align: top;
+}
+p{
+    font-size: 2.0vw;
+}
+.bio {
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    max-height: 50%;
+}
+.container{
+    display: grid;
+    width: 80vw;
+    margin: auto;
+    grid-template-columns: 45vw 30vw;
+    grid-template-rows: 50vw 30vw; 
+    grid-template-areas: "top top" "bottomLeft bottomRight";
+    grid-gap: 15px;
+    justify-content: center;
+}
+.box{
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#one{
+    display: flex;
+    flex-direction: column;
+    grid-area: top;
+    border: none;
+}
+#two{
+    display: flex;
+    flex-direction: column;
+    grid-area:bottom Left;
+}
+#three{
+    display: flex;
+    flex-direction: column;
+    grid-area:bottom Right;
+}
+
+
